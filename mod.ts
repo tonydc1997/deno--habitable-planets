@@ -11,7 +11,7 @@ async function loadPlanetsData() {
     comment: "#",
   });
 
-  console.log(data);
+  console.log(result);
 }
 
 await loadPlanetsData();
