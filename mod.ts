@@ -13,7 +13,7 @@ async function loadPlanetsData() {
   });
   Deno.close(file.rid);
 
-  console.log(result);
+  return result;
 }
 
 await loadPlanetsData();
