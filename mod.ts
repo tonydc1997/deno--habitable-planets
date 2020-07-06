@@ -33,7 +33,7 @@ async function loadPlanetsData() {
     );
   });
 
-  return result;
+  return habitablePlanets;
 }
 
 const newEarths = await loadPlanetsData();
