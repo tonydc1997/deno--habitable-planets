@@ -4,7 +4,7 @@ import { parse } from "https://deno.land/std/encoding/csv.ts";
 
 async function loadPlanetsData() {
   const path = join(".", "kepler_exoplanets_nasa.csv");
-  const data = await Deno.open(path);
+  const file = await Deno.open(path);
 
   console.log(data);
 }
