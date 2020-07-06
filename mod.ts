@@ -11,6 +11,7 @@ async function loadPlanetsData() {
     comment: "#",
   });
 
+  Deno.close(file.rid);
   console.log(result);
 }
 
