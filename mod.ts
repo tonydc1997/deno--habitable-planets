@@ -15,10 +15,13 @@ async function loadPlanetsData() {
 
   const habitablePlanets = result.filter((planet) => {
     const planetaryRadius = planet["koi_prad"];
+    const stellarMass = planet["koi_smass"];
     return (
       planet["koi_disposition"] === "CONFIRMED" &&
       planetaryRadius > 0.5 &&
-      planetaryRadius <= 1.5
+      planetaryRadius <= 1.5 &&
+      stellarMass > 0.78 &&
+      stellarMass < 1.04
     );
   });
 
