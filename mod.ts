@@ -16,4 +16,4 @@ async function loadPlanetsData() {
   return result;
 }
 
-await loadPlanetsData();
+const newEarths = await loadPlanetsData();
