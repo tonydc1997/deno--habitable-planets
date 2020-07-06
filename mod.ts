@@ -17,10 +17,11 @@ async function loadPlanetsData() {
   });
   Deno.close(file.rid);
 
-  const habitablePlanets = result.filter((planet) => {
+  const habitablePlanets = (result as Array<Planet>).filter((planet) => {
     const planetaryRadius = planet["koi_prad"];
     const stellarMass = planet["koi_smass"];
     const stellarRadius = planet["koi_srad"];
+
     return (
       planet["koi_disposition"] === "CONFIRMED" &&
       planetaryRadius > 0.5 &&
