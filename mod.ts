@@ -37,4 +37,7 @@ async function loadPlanetsData() {
 }
 
 const newEarths = await loadPlanetsData();
+for (const planet of newEarths) {
+  console.log(planet);
+}
 console.log(`${newEarths.length} Earth-like planets found!`);
