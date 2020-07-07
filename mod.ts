@@ -42,6 +42,7 @@ async function loadPlanetsData() {
       "koi_srad",
       "koi_count",
       "koi_steff",
+      "koi_period",
     ]);
   });
 }
