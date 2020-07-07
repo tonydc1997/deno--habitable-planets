@@ -7,3 +7,8 @@ A tiny Deno 🦕 project that parses through Kepler's CSV file to discover habit
 ```
 
 you may find...
+
+# Installation
+
+1. Ensure you have Deno installed: https://deno.land/#installation
+2. In the terminal, run: `deno run --allow-read mod.ts`
